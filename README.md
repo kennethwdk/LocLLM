@@ -1,8 +1,8 @@
 # LocLLM: Exploiting Generalizable Human Keypoint Localization via Large Language Model
 
-[[`Paper`](https://arxiv.org/abs/2406.04659)]
+[[`arXiv`](https://arxiv.org/abs/2406.04659)][[`Paper`](https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_LocLLM_Exploiting_Generalizable_Human_Keypoint_Localization_via_Large_Language_Model_CVPR_2024_paper.pdf)]
 
-> [LocLLM: Exploiting Generalizable Human Keypoint Localization via Large Language Model](https://arxiv.org/abs/2406.04659)  
+> [LocLLM: Exploiting Generalizable Human Keypoint Localization via Large Language Model](https://openaccess.thecvf.com/content/CVPR2024/html/Wang_LocLLM_Exploiting_Generalizable_Human_Keypoint_Localization_via_Large_Language_Model_CVPR_2024_paper.html)  
 > Dongkai Wang, Shiyu Xuan, Shiliang Zhang  
 > CVPR 2024 *Highlight*
 
@@ -88,22 +88,22 @@ Change `IDX` option in script to specify the gpu ids for evaluation, multiple id
 
 ```shell
     # evaluate on coco val set
-    bash valid_coco.sh
+    bash scripts/valid_coco.sh
     # evaluate on h36m set
-    bash valid_h36m.sh
+    bash scripts/valid_h36m.sh
     # evaluate on humanart set
-    bash valid_humanart.sh
+    bash scripts/valid_humanart.sh
     # evaluate on mpii set
-    bash valid_mpii.sh
+    bash scripts/valid_mpii.sh
 ```
 
 ### 3. Train Model
 
 ```shell
     # train on coco
-    bash train_coco.sh
+    bash scripts/train_coco.sh
     # train on h36m and mpii
-    bash train_h36m.sh
+    bash scripts/train_h36m.sh
 ```
 
 Note that GPU memory should not be less than 24GB, training on 4 RTX 3090 GPUs takes about 3 days.
